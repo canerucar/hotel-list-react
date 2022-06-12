@@ -1,0 +1,25 @@
+.modal {
+  @apply justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none;
+
+  &-wrapper {
+    @apply border-0 rounded-lg shadow-lg flex flex-col bg-brand-color-200 outline-none focus:outline-none relative w-auto my-6 mx-auto max-w-3xl;
+
+    .form {
+      @apply relative p-6 flex flex-col gap-2;
+
+      input {
+        @apply w-56 h-11 rounded px-3;
+      }
+
+      button {
+        @apply h-11 bg-brand-color-100 text-white rounded border border-brand-color-100;
+        @apply hover:bg-brand-color-400 hover:text-brand-color-100 transition-all;
+      }
+    }
+
+    .button {
+      @apply text-white font-bold bg-brand-color-red h-11 border border-brand-color-red;
+      @apply hover:bg-brand-color-400 hover:text-brand-color-red transition-all;
+    }
+  }
+}

@@ -1,14 +1,19 @@
 {
   "hotels": [
     {
-      "id": 1,
-      "name": "Voyage Hptel",
-      "point": "4"
+      "id": 1655067791537,
+      "name": "Hotel 1",
+      "point": 8
     },
     {
-      "id": 2,
-      "name": "Max Royal Hptel",
-      "point": "5"
+      "id": 1655067796713,
+      "name": "Hotel 2",
+      "point": 3
+    },
+    {
+      "id": 1655067801027,
+      "name": "Hotel 3",
+      "point": 1
     }
   ]
 }

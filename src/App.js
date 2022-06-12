@@ -1,7 +1,11 @@
+import Home from 'components/Home/Home';
+
+import "styles/App.scss";
+
 function App() {
   return (
     <div className="App">
-      hello world
+      <Home />
     </div>
   );
 }

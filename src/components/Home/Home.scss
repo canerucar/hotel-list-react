@@ -1,0 +1,48 @@
+.home {
+  @apply w-[400px] bg-brand-color-400 p-3 flex flex-col gap-5 rounded;
+
+  &-add {
+    &-button {
+      @apply flex items-start gap-3 p-2 border border-brand-color-100 rounded;
+      @apply hover:bg-brand-color-100 hover:text-brand-color-400 transition-all;
+
+      svg {
+        @apply text-2xl;
+      }
+    }
+  }
+
+  &-list {
+    @apply flex gap-2 border border-brand-color-100 p-2 rounded relative;
+
+    &:hover .home-list-content-close {
+      @apply flex cursor-pointer;
+    }
+
+    img {
+      @apply max-h-[115px];
+    }
+
+    &-content {
+      @apply flex flex-col gap-3;
+
+      &-point {
+        @apply bg-brand-color-200 text-white rounded px-2 py-1 max-w-[80px];
+      }
+
+      &-buttons {
+        @apply flex gap-2;
+
+        button {
+          @apply bg-brand-color-100 text-white border border-brand-color-100 rounded px-2 py-1;
+          @apply hover:bg-brand-color-400 hover:text-brand-color-100 transition-all;
+          @apply disabled:bg-brand-color-red disabled:text-white;
+        }
+      }
+
+      &-close {
+        @apply text-brand-color-red absolute right-3 text-2xl hidden;
+      }
+    }
+  }
+}
